@@ -9,13 +9,15 @@ package musicos;
  *
  * @author estudiantes
  */
-public class Musicos {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Banda banda=new Banda();
+        
     }
     
 }
