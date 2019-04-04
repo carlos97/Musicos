@@ -13,7 +13,7 @@ import interfaces.IInstrumento;
  */
 public class Instrumento implements IInstrumento {
 
-    protected String nombre;
+    public String nombre;
 
     public Instrumento() {
         this.setNombre();

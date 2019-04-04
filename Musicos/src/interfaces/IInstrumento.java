@@ -14,7 +14,6 @@ import java.util.Random;
 public interface IInstrumento {
 
     Random rand = new Random();
-    //public IInstrumento ();
 
     String getNombre();
 

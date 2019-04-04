@@ -49,7 +49,7 @@ public class Banda implements IBanda {
     public void afinar() {
         for (int i = 0; i < musicos.length; i++) {
             if (musicos[i].getDisponibilidad()) {
-                System.out.print("Musico " + i + " ");
+                System.out.print("Musico " + (i+1) + " ");
                 musicos[i].afinar();
             }
         }
@@ -60,7 +60,7 @@ public class Banda implements IBanda {
     public void tocar() {
         for (int i = 0; i < musicos.length; i++) {
             if (musicos[i].getDisponibilidad()) {
-                System.out.print("Musico " + i + " ");
+                System.out.print("Musico " + (i+1) + " ");
                 musicos[i].tocar();
             }
         }

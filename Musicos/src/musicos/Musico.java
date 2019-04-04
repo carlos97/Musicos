@@ -19,7 +19,6 @@ public class Musico implements IMusico {
 
     public Musico() {
         instrumento = new Instrumento();
-        this.setDisponibilidad();
         this.setInstrumento();
     }
 
@@ -35,7 +34,7 @@ public class Musico implements IMusico {
 
     @Override
     public void setDisponibilidad() {
-        if (rand.nextInt() % 2 == 0) {
+        if (Math.abs(rand.nextInt()) % 2 == 0) {
             disponibilidad = true;
         } else {
             disponibilidad = false;
@@ -44,38 +43,23 @@ public class Musico implements IMusico {
 
     @Override
     public void setInstrumento() {
-        switch (rand.nextInt() % 6) {
+        switch (Math.abs(rand.nextInt() % 6)) {
             case 0:
                 instrumento = new Bajo();
                 break;
             case 1:
                 instrumento = new Bateria();
                 break;
-            case -1:
-                instrumento = new Bateria();
-                break;
             case 2:
-                instrumento = new Flauta();
-                break;
-            case -2:
                 instrumento = new Flauta();
                 break;
             case 3:
                 instrumento = new Guitarra();
                 break;
-            case -3:
-                instrumento = new Guitarra();
-                break;
             case 4:
                 instrumento = new Saxofon();
                 break;
-            case -4:
-                instrumento = new Saxofon();
-                break;
             case 5:
-                instrumento = new Violin();
-                break;
-            case -5:
                 instrumento = new Violin();
                 break;
         }
