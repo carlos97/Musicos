@@ -11,6 +11,11 @@ import musicos.Instrumento;
  *
  * @author estudiantes
  */
-public class Bateria extends Instrumento{
-    
+public class Bateria extends Instrumento {
+
+    @Override
+    public void setNombre() {
+        nombre = "Bateria";
+    }
+
 }

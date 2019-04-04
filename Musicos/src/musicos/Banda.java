@@ -12,12 +12,18 @@ import interfaces.IBanda;
  * @author estudiantes
  */
 public class Banda implements IBanda {
-    
+
+    public Banda() {
+        this.getMusicosDisponibles();
+        this.mostrarListaMusicos();
+        this.afinar();
+        this.tocar();
+    }
 
     @Override
     public Musico[] getMusicosDisponibles() {
-        for(int i=0;i<musicos.length;i++){
-            musicos[i]=new Musico();
+        for (int i = 0; i < musicos.length; i++) {
+            musicos[i] = new Musico();
             musicos[i].setDisponibilidad();
         }
         return musicos;
@@ -25,22 +31,40 @@ public class Banda implements IBanda {
 
     @Override
     public void setMusicos() {
-        
+
     }
 
     @Override
     public void mostrarListaMusicos() {
-      
+        System.out.println("La banda esta conformada por:");
+        for (int i = 0; i < musicos.length; i++) {
+            if (musicos[i].getDisponibilidad()) {
+                System.out.println("Musico " + i);
+            }
+        }
+        System.out.println("");
     }
 
     @Override
     public void afinar() {
-       
+        for (int i = 0; i < musicos.length; i++) {
+            if (musicos[i].getDisponibilidad()) {
+                System.out.print("Musico " + i + " ");
+                musicos[i].afinar();
+            }
+        }
+        System.out.println("");
     }
-    
+
     @Override
     public void tocar() {
-       
+        for (int i = 0; i < musicos.length; i++) {
+            if (musicos[i].getDisponibilidad()) {
+                System.out.print("Musico " + i + " ");
+                musicos[i].tocar();
+            }
+        }
+        System.out.println("");
     }
-    
+
 }

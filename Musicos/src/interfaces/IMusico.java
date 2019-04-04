@@ -14,8 +14,6 @@ import musicos.Instrumento;
  */
 public interface IMusico {
 
-    boolean disponibilidad = false;
-    Instrumento instrumento = new Instrumento();
     Random rand = new Random();
 
     boolean getDisponibilidad();

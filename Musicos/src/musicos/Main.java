@@ -16,8 +16,8 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Banda banda=new Banda();
-        
+        Banda banda = new Banda();
+
     }
-    
+
 }

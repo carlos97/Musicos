@@ -12,13 +12,16 @@ import java.util.Random;
  * @author estudiantes
  */
 public interface IInstrumento {
-   String nombre="";
-   Random rand=new Random();
-  //public IInstrumento ();
-   String getNombre();
-   void setNombre();
-   void afinar();
-   void tocar();
-    
-    
+
+    Random rand = new Random();
+    //public IInstrumento ();
+
+    String getNombre();
+
+    void setNombre();
+
+    void afinar();
+
+    void tocar();
+
 }
