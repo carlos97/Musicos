@@ -8,6 +8,6 @@ Aplicacion sobre estructuración de una banda aleatoria.
 3. ejecute el siguiente comando para iniciar el programa:
 	java -jar Musicos.jar
 
-Laura Sofia dueñas - 20172020102
+Laura Sofia Dueñas - 20172020102
 Carlos Andrés Lopez - 20172020136
 Julian David Rincon Castro - 20172020125
